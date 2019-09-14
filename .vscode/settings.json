@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "*.html": "gohtml",
+    "*.css": "postcss"
+  },
+  "postcss.validate": false,
+  "emmet.includeLanguages": {
+    "gohtml": "html",
+    "postcss": "css"
+  },
+  "emmet.syntaxProfiles": {
+    "gohtml": "html",
+    "postcss": "css"
+  }
+}

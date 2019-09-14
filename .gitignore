@@ -1,0 +1,8 @@
+public/
+node_modules/
+/assets/*
+!/assets/images/
+resources/
+
+# Local Netlify folder
+.netlify
