@@ -1,9 +1,9 @@
 html {
-  font-size: calc(18px + 0.25vw);
+  font-size: calc(16px + 0.25vw);
 }
 
 h1 {
-  @apply text-indigo-500;
+  @apply text-2xl text-indigo-500;
 }
 
 a {
