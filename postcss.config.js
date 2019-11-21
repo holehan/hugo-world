@@ -4,6 +4,7 @@ module.exports = {
     "postcss-import": {},
     tailwindcss: {},
     "postcss-nested": {},
+    "@mgsisk/postcss-modular-rhythm": {},
     autoprefixer: {
       // grid: 'autoplace'
     }
