@@ -1,11 +1,5 @@
-html {
-  font-size: calc(16px + 0.25vw);
-}
-
-h1 {
-  @apply text-2xl text-indigo-500;
-}
-
-a {
-  @apply underline text-pink-700;
+:root {
+  font-family: sans-serif;
+  font-size: 0mfs;
+  line-height: 0mlh;
 }

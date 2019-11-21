@@ -1,0 +1,103 @@
+.content {
+  font-size: 0mfs;
+  line-height: 1vru;
+  * + h1,
+  * + h2,
+  * + h3,
+  * + h4 {
+    margin-top: 1vru;
+  }
+
+  * + p,
+  * + ul,
+  * + ol,
+  * + table,
+  * + blockquote {
+    margin-top: 0.5vru;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  ol,
+  table,
+  blockquote {
+    hyphens: auto;
+    @apply mx-3;
+    @screen md {
+      @apply mx-4;
+    }
+    @screen xl {
+      @apply mx-8;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-indigo-500 font-serif;
+  }
+
+  h1 {
+    font-size: 4mfs;
+    line-height: 4mlh;
+    @apply font-semibold;
+  }
+
+  h2 {
+    font-size: 2mfs;
+    line-height: 2mlh;
+  }
+
+  h3 {
+    font-size: 1mfs;
+    line-height: 1mlh;
+  }
+
+  h4 {
+    font-size: 0mfs;
+    line-height: 0mlh;
+  }
+
+  /* If a subheading directly follows a heading with no text or other similar
+  /* element in between, make the distance between the two smaller - as small
+  /* as the space above a regular paragraph and the like. */
+  h1 + h2,
+  h1 + h3,
+  h1 + h4,
+  h2 + h3,
+  h2 + h4,
+  h3 + h4 {
+    margin-top: 0.5vru;
+  }
+
+  h1:first-child {
+    margin-top: 1vru;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+  li {
+    @apply ml-4;
+  }
+
+  * + li {
+    margin-top: 0.25vru;
+  }
+  a {
+    color: theme("colors.indigo.700");
+    text-decoration: underline;
+    text-decoration-color: theme("colors.indigo.700");
+    &:hover {
+      background-color: theme("colors.indigo.100");
+      color: theme("colors.indigo.800");
+      text-decoration-color: theme("colors.indigo.800");
+      transition: all 0.25s ease-out;
+    }
+  }
+}
