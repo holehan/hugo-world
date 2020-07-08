@@ -1,0 +1,74 @@
+:root {
+  font-family: sans-serif;
+  @apply leading-relaxed;
+}
+
+h1 {
+  @apply text-xl;
+  @screen sm {
+    @apply text-3xl;
+  }
+  @screen md {
+    @apply text-4xl;
+  }
+  @screen lg {
+    @apply text-5xl;
+  }
+
+  /* @screen xxl {
+    @apply text-6xl;
+  } */
+}
+
+h2 {
+  @apply text-lg;
+  @screen sm {
+    @apply text-xl;
+  }
+  @screen md {
+    @apply text-2xl;
+  }
+  @screen lg {
+    @apply text-3xl;
+  }
+
+  /* @screen xxl {
+    @apply text-4xl;
+  } */
+}
+
+h3 {
+  @apply text-base;
+  @screen sm {
+    @apply text-lg;
+  }
+  @screen md {
+    @apply text-xl;
+  }
+  @screen lg {
+    @apply text-2xl;
+  }
+
+  /* @screen xxl {
+    @apply text-3xl;
+  } */
+}
+
+h4 {
+  @apply text-sm;
+  @screen sm {
+    @apply text-base;
+  }
+  @screen md {
+    @apply text-lg;
+
+    width: 100px;
+  }
+  @screen lg {
+    @apply text-xl;
+  }
+
+  /* @screen xxl {
+    @apply text-2xl;
+  } */
+}
