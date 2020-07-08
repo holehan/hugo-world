@@ -1,22 +1,25 @@
 import postcss from "rollup-plugin-postcss";
 
+const PRODUCTION = process.env.NODE_ENV === "production";
+const DEVELOPMENT = process.env.NODE_ENV === "development";
+
 export default [
   {
-    input: "src/styles/main.css",
+    input: "src/css/main.css",
     output: {
       format: "iife",
       name: "app",
-      file: "assets/css/main.css"
+      file: "assets/css/main.css",
     },
     watch: {
-      clearScreen: false
+      clearScreen: false,
     },
     plugins: [
       postcss({
         extract: true,
         config: true,
-        sourceMap: "inline"
-      })
-    ]
-  }
+        sourceMap: DEVELOPMENT ? "inline" : false,
+      }),
+    ],
+  },
 ];

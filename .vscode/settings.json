@@ -3,7 +3,9 @@
     "*.html": "gohtml",
     "*.css": "postcss"
   },
-  "postcss.validate": false,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "emmet.includeLanguages": {
     "gohtml": "html",
     "postcss": "css"
@@ -11,5 +13,19 @@
   "emmet.syntaxProfiles": {
     "gohtml": "html",
     "postcss": "css"
-  }
+  },
+  "stylelint.autoFixOnSave": false,
+  "stylelint.syntax": "scss",
+  "prettier.disableLanguages": ["postcss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": false
+  },
+  "filewatcher.commands": [
+    {
+      "match": "\\.css*",
+      "isAsync": true,
+      "cmd": "${workspaceRoot}/node_modules/.bin/stylelint ${file} --syntax scss --fix",
+      "event": "onFileChange"
+    }
+  ]
 }
